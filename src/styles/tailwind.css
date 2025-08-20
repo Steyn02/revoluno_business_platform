@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core Colors */
+    --color-background: #FFFFFF; /* white */
+    --color-foreground: #111827; /* gray-900 */
+    --color-border: #E5E7EB; /* gray-200 */
+    --color-input: #FFFFFF; /* white */
+    --color-ring: #6366F1; /* indigo-500 */
+    
+    /* Card Colors */
+    --color-card: #FFFFFF; /* white */
+    --color-card-foreground: #111827; /* gray-900 */
+    
+    /* Popover Colors */
+    --color-popover: #FFFFFF; /* white */
+    --color-popover-foreground: #111827; /* gray-900 */
+    
+    /* Muted Colors */
+    --color-muted: #F8FAFC; /* slate-50 */
+    --color-muted-foreground: #6B7280; /* gray-500 */
+    
+    /* Primary Colors */
+    --color-primary: #6366F1; /* indigo-500 */
+    --color-primary-foreground: #FFFFFF; /* white */
+    
+    /* Secondary Colors */
+    --color-secondary: #8B5CF6; /* violet-500 */
+    --color-secondary-foreground: #FFFFFF; /* white */
+    
+    /* Destructive Colors */
+    --color-destructive: #DC2626; /* red-600 */
+    --color-destructive-foreground: #FFFFFF; /* white */
+    
+    /* Accent Colors */
+    --color-accent: #10B981; /* emerald-500 */
+    --color-accent-foreground: #FFFFFF; /* white */
+    
+    /* Success Colors */
+    --color-success: #059669; /* emerald-600 */
+    --color-success-foreground: #FFFFFF; /* white */
+    
+    /* Warning Colors */
+    --color-warning: #F59E0B; /* amber-500 */
+    --color-warning-foreground: #FFFFFF; /* white */
+    
+    /* Error Colors */
+    --color-error: #DC2626; /* red-600 */
+    --color-error-foreground: #FFFFFF; /* white */
+    
+    /* Surface Color */
+    --color-surface: #F8FAFC; /* slate-50 */
+    
+    /* Text Colors */
+    --color-text-primary: #111827; /* gray-900 */
+    --color-text-secondary: #6B7280; /* gray-500 */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .font-accent {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .transition-smooth {
+    transition: all 250ms ease-in-out;
+  }
+  
+  .shadow-cta {
+    box-shadow: 0 4px 14px 0 rgba(99, 102, 241, 0.15);
+  }
+  
+  .shadow-card {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .scroll-smooth {
+    scroll-behavior: smooth;
+  }
+}
